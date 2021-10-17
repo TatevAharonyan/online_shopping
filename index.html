@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCSS.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Нилмарт</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- contact menu -->
+        <div class="contact-nav">
+            <div class="contact-nav__contact">
+                <img src="./img/home/phone.png" alt="phone" />
+                <span>+7 (999) 133-21-83</span>
+                <span>8 (800) 222-31-36</span>
+                <span>- Бесплатно по России</span>
+            </div>
+
+            <nav class="contact-nav__nav">
+                <a href="#">Контакты</a>
+                <a href="#">Доставка</a>
+                <a href="#">FAQ</a>
+                <a href="#">Блог</a>
+            </nav>
+        </div>
+        <div class=container>
+            <!-- header -->
+            <header class="header">
+                <div class="header__logo-form-shopcart">
+                    <div class="header__wrapper-logo">
+                        <img src="./img/logo.png" alt="logo">
+                        <div class="header__name">
+                            <p>Нилмарт</p>
+                            <span>Восточный онлайн маркет</span>
+                        </div>
+                    </div>
+                    <div class="header__search-shopcart">
+                        <div id="form-search-wrapp">
+                            <form onsubmit="" class="form-search mini_search">
+                                <input id="header-input" type="text" placeholder="Поиск">
+                                <button type="submit">
+                                    <img id="header-button-img" src="./img/home/cearch.png" alt="search">
+                                </button>
+
+                            </form>
+                        </div>
+                        <div class="shopcart" onclick="openPopUpYourGoods ()">
+                            <img src="./img/home/shopcart_svg.svg" alt="shopcart">
+                            <span class="shopcart_number">0</span>
+
+                            <!-- pop-up Your goods -->
+
+                            <div class="header__yourGoods_wrapper">
+                                <div class=header__yourGoods_title>
+                                    <p class="title">Ваши тов</p>
+                                    <span class="cloze">X</span>
+                                </div>
+                                <!-- product -->
+                                <div class="header__yourGoods_product-wrapp"></div>
+                                <div class="header__yourGoods_outcome">
+                                    <div class="outcome">
+                                        <h3>Итого: <p>25600₽</p>
+                                        </h3>
+                                    </div>
+                                    <div class="button">
+                                        <button onclick="">Перейти в корзину</button>
+                                    </div>
+                                </div>
+                                <div class="header__yourGoods_feature">
+                                    <div class="header__yourGoods_feature-section">
+                                        <h6>Баллы: <p>45</p>
+                                            <div onclick="">?</div>
+                                        </h6>
+                                    </div>
+                                    <div class="header__yourGoods_feature-section">
+                                        <h6>Сумма скидок: <p>3900₽</p>
+                                        </h6>
+                                    </div>
+                                    <div class="header__yourGoods_feature-section">
+                                        <h6>Подарков: <p>25</p>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="header__yourGoods_delivery">
+                                    <div class="header__yourGoods_delivery-icon"><img
+                                            src="./img/home/delivery-truck.png" alt="delivery-truck"></div>
+                                    <p>Бесплатная доставка</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- header burger -->
+            <header class="header-mini">
+                <div class="header-mini__icon" id="burger_img" onclick="openOpenMiniMenu ()">
+                    <img id="header-img-burger" src="./img/home/header-mini/burger.png" alt="byrger menu">
+                    <img id="header-img-cloze" src="./img/home/header-mini/cloze.png" alt="byrger menu">
+
+                </div>
+
+                <div class="header-mini__icon" onclick="">
+                    <img src="./img/home/header-mini/tell-burger.png" alt="tel">
+                </div>
+                <!-- logo -->
+                <div class="header-mini__logo">
+                    <div class="header-mini__wrapper-logo">
+                        <img src="./img/home/header-mini/logo_mini.png" alt="logo">
+                        <div class="header-mini__name">
+                            <p>Нилмарт</p>
+                            <span>Восточный онлайн маркет</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="header-mini__icon" onclick="openPopupSearch()">
+                    <img src="./img/home/header-mini/search-burger.png" alt="search">
+                </div>
+                <div class="header-mini__icon" onclick="">
+                    <img src="./img/home/header-mini/shopcart-burger.png" alt="shopcart">
+                </div>
+                <!--menu pop-up -->
+                <div class="header-mini__menu_wrapper">
+                    <div class="header-mini__menu">
+                    </div>
+                </div>
+
+                <!-- search popup -->
+                <div class="header-mini__search_wrapper">
+                </div>
+
+            </header>
+
+            <!-- nav bar -->
+            <div class="navBar-slyder">
+
+                <nav class="header__horizontal-menu">
+                    <div class="header__nav-wrapper"><img src="./img/home/Парфюмерия.png" alt="icon"><a
+                            href="#">Парфюмерия</a></div>
+                    <div><img src="./img/home/Косметика.png" alt="icon"><a href="#">Косметика</a></div>
+                    <div><img src="./img/home/Травы.png" alt="icon"><a href="#">Травы</a></div>
+                    <div><img src="./img/home/Масла.png" alt="icon"><a href="#">Масла</a></div>
+                    <div><img src="./img/home/Питание.png" alt="icon"><a href="#">Питание</a></div>
+                    <div><img src="./img/home/Акции.png" alt="icon"><a href="#">Акции</a></div>
+                    <div><img src="./img/home/Бренды.png" alt="icon"><a href="#">Бренды</a></div>
+                    </ul>
+
+                </nav>
+                <!-- slyder -->
+                <section class="container1">
+                    <div class="carusel">
+
+                        <div class="carusel__text-form">
+                            <p class="text">Поступление натуральной косметики из Марокко</p>
+                            <span>Получите 5% скидки на косметику из Марокко</span>
+                            <form class="carusel__form">
+                                <input class="carusel__input" type="text" placeholder="Введите Имя">
+                                <input class="carusel__input" type="email" placeholder="Введите E-mail">
+                                <div class="checkboxText_buttn">
+                                    <div class="checkboxText">
+                                        <div class="squared">
+                                            <input type="checkbox" checked value="None" id="squared" name="check" />
+                                            <label for="squared"></label>
+                                        </div>
+                                        <span>Даю согласие на обработку персональных данных</span>
+                                    </div>
+                                </div>
+                                <button class="bg-color" name="" type="submit">
+                                    <img src="./img/home/carusel/discounts.png" alt="discounts">
+                                    Получить скидку
+                                </button>
+                            </form>
+                            <!-- carusel img -->
+                        </div>
+                        <div class="carusel__img">
+                            <img src="./img/home/carusel/carusel_bg2.png" alt="img-carusel">
+
+                        </div>
+                    </div>
+                    <!-- radiobutton -->
+                    <form class="carusel__radio-input">
+                        <div class="round">
+                            <input type="radio" value="None" id="" name="" checked />
+                            <label for="round"></label>
+
+                        </div>
+                        <div class="round">
+                            <input type="radio" value="None" id="">
+                            <label for="round"></label>
+                        </div>
+                        <div class="round">
+                            <input type="radio" value="None" id="">
+                            <label for="round"></label>
+                        </div>
+                        <div class="round">
+                            <input type="radio" value="None" id="">
+                            <label for="round"></label>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+
+            <!-- main -->
+            <main class="conteiner__home-main home-main">
+
+                <!-- section1  Арабские духи -->
+                <section class="home-main__section1">
+
+                    <div class="home-main__section1_title">
+                        <h1>Арабские духи</h1>
+                        <span class="text position2">Фильтры <div class="section1-arrow"></div></span>
+                    </div>
+
+                    <div class="home-main__section1_filter">
+
+                        <span class="text position1">Фильтры</span>
+
+                        <!--main section button -1 -->
+
+                        <button class="home-main__section1_filter-buttons" id="home-main__section1_filter-buttons1"
+                            onclick="openMainPopUp1()">
+                            Ноты
+                        </button>
+                        <!-- pop-up button "Ноты" -->
+                        <div class="pop-up" id="home-main-pop-up1"></div>
+
+                        <!--main section button -2 -->
+
+                        <button class="home-main__section1_filter-buttons " onclick="">
+                            Пол
+                        </button>
+
+                        <!--main section button -3 -->
+
+                        <button class="home-main__section1_filter-buttons" id="home-main__section1_filter-buttons2"
+                            onclick="openMainPopUp2()">
+                            Группа
+                        </button>
+                        <!-- pop-up button "Группа" -->
+                        <div class="pop-up" id="home-main-pop-up2"></div>
+
+                        <!--main section button -4 -->
+
+                        <button class="home-main__section1_filter-buttons " onclick="">
+                            Концентрация
+                        </button>
+
+                        <!--main section button -5 -->
+
+                        <button class="home-main__section1_filter-buttons " onclick="">
+                            Бренд
+                        </button>
+                    </div>
+
+                    <!-- product wrapper  -->
+                    <div class="home-main__section1_wrapper-product">
+                        <!-- product  -->
+                    </div>
+
+                    <button class="home-main__section1_filter-buttons add" onclick="">
+                        Больше товаров
+                        <div class="section1-arrow"></div>
+                    </button>
+                </section>
+
+
+                <!-- section2  Косметика -->
+                <section class="home-main__section1">
+
+                    <div class="home-main__section1_title">
+                        <h1>Косметика</h1>
+                        <p class="chapter">Вид косметики: <span class="subdivision">Скраб <span class="cloze"
+                                    onclick="">x</span></span></p>
+                        <p class="chapter">Бренд:<span class="subdivision">Dabur <span class="cloze"
+                                    onclick="">x</span></span> <span class="subdivision">Malak Bio<span class="cloze"
+                                    onclick="">x</span></span></p>
+                        <button class="home-main__section1_filter-buttons title-button" onclick="">
+                            <span class="cloze" onclick="">x</span>
+                            Сбросить фильтры
+                        </button>
+                        <span class="text position2">Фильтры <div class="arrow"></div> </span>
+                    </div>
+
+                    <div class="home-main__section1_filter">
+
+                        <span class="text position1">Фильтры</span>
+
+                        <!--main section button -1 -->
+
+                        <button class="home-main__section1_filter-buttons button-corol-tr" onclick="">
+                            Вид косметики: 1
+                        </button>
+
+                        <!--main section button -2 -->
+
+                        <button class="home-main__section1_filter-buttons " onclick="">
+                            Для чего
+                        </button>
+
+                        <!--main section button -3 -->
+
+                        <button class="home-main__section1_filter-buttons button-corol-tr" onclick="">
+                            Бренд: 2
+                        </button>
+                    </div>
+
+                    <!-- product wrapper  -->
+                    <div class="home-main__section1_wrapper-product" id="section2_product">
+                        <!-- product wrapper -->
+
+                    </div>
+                    <button class="home-main__section1_filter-buttons add" onclick="">
+                        Больше товаров
+
+                        <div class="arrow"></div>
+                    </button>
+
+
+
+                </section>
+
+                <!-- section 3 -->
+                <section class="home-main__section3">
+                    <h3 class="home-main__section3_context">
+                        Подпишитесь на E-mail рассылку
+                        <span>со скидками</span> от <span>20%</span> и получите подарок уже в первом заказе
+                    </h3>
+
+                    <form class="home-main__section3_form" onsubmit="">
+                        <span>Ваш E-mail</span>
+                        <input type="email" placeholder="Введите E-mail">
+                        <div class="button">
+                            <button class="" onclick="">Подписаться</button>
+                            <button class="" onclick="">Подписаться</button>
+                            <button class="" onclick="">Подписаться</button>
+                        </div>
+                    </form>
+                </section>
+
+            </main>
+        </div>
+    </div>
+    </div>
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <!-- footer top-->
+            <div class="footer__top">
+                <!-- footer section 1 -->
+                <div class="footer__top_section">
+                    <div class="footer__top_logo" id="footer_logo">
+                        <img src="./img/logo-2.png" alt="logo">
+                        <div class="footer__top_logo-name">
+                            <p>Нилмарт</p>
+                            <span>Восточный онлайн маркет</span>
+                        </div>
+                    </div>
+                    <nav class="footer__top_nav">
+                        <a href="#">Контакты</a>
+                        <a href="#">Доставка</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Блог</a>
+                    </nav>
+                </div>
+                <!--footer section 2 -->
+                <div class="footer__top_section">
+                    <div class="footer__top_contact">
+                        <div class="footer__top_icon-text">
+
+                            <img src="./img/footer/tel.png" alt="tel">
+                            <div>
+                                +7 (999) 133-21-83<br>
+                                8 (800) 222-31-36
+                            </div>
+
+                            <span>
+                                <img src="./img/footer/whatsapp.png" alt="whatsapp">
+                                <img src="./img/footer/viber.png" alt="viber">
+                                <img src="./img/footer/telegram.png" alt="telegram">
+                            </span>
+                        </div>
+
+                        <div class="footer__top_icon-text">
+
+                            <img src="./img/footer/mail.png" alt="mail">
+                            <p>nilmart@gmail.com</p>
+
+                        </div>
+
+                        <div class="footer__top_icon-text">
+
+                            <img src="./img/footer/loc.png" alt="loc">
+                            <p>г. Уфа, ул. Кадомцевых, 12/2</p>
+
+                        </div>
+                        <div class="footer__top_icon-text">
+                            <a>Посмотреть на карте</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- footer section 3 -->
+                <div class="footer__top_section section-3  ">
+
+                    <h6>Акции и скидки для пользователей
+                        наших социальных сетей</h6>
+
+                    <div class="wrapp-soc">
+                        <div class="footer__top_soc">
+                            <div class="footer__top_soc-block">
+                                <img src="./img/footer/vk.png" alt="vk">
+                            </div>
+                            <div class="footer__top_soc-block">
+                                <img src="./img/footer/instagram.png" alt="instagram">
+                            </div>
+                            <div class="footer__top_soc-block">
+                                <img src="./img/footer/facebook.png" alt="facebook">
+                            </div>
+                            <div class="footer__top_soc-block">
+                                <img src="./img/footer/ok.png" alt="ok">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer__top_soc-up" onclick="">
+                        <span>Вверх</span>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer buttom -->
+
+            <div class="footer__buttom">
+                <div>
+                    <p id="buttom-text">Нилмарт 2012 Все права защищены</p>
+                </div>
+                <div class="text-decoration">
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div class="section-3">
+                    <p>Работаем круглосуточно</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

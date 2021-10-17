@@ -1,0 +1,1452 @@
+
+    // const color 
+  
+$color-active: #8BB655
+$color-text: #222222
+$color-number: #FD8006
+$color-bg: #F6F6F6 
+$corol-mini-text: #858585
+$color-form-1: #A7A7A7
+$color-form-2: #7D7D7D
+$color-form-3: #D6D6D6
+$colorTop: #B4B4B4
+$colorBottom: #9B9B9B
+$corol-text2: #FFFFFF
+$color-text3: #000000
+$color-button1:#739B41
+$color-border1: #D1D1D1
+$color-hover: #739B41
+
+// fonts
+$font-1: Montserrat
+$font-2: Circe
+
+*
+    box-sizing: border-box
+    font-style: normal
+    font-weight: normal
+
+
+
+body,
+html,
+.wrapper 
+    margin: 0
+    padding: 0
+    max-width: 1440px
+
+.container
+    width: 100%
+
+.contact-nav
+    width: 100%
+    height: 45px
+    padding: 10px 10% 
+    background-color: $color-bg
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__contact
+        width: 40%
+        height: auto
+        img
+            margin-right: 6px
+        span
+            font-family: $font-1
+            font-size: 13px
+            line-height: 18,29px
+            color: $color-text
+        span:nth-child(3)
+           margin:0 7px 0 1%
+            
+    &__nav 
+        width: 25.14%
+        font-family: $font-1
+        font-size: 14px
+        line-height: 17px
+        text-align: right
+        text-decoration-line: underline
+        color: $color-text
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        a 
+            color: $color-text
+            cursor: pointer
+
+.container
+    width: 80%
+    margin: 0 auto
+
+// header
+ 
+.header
+        margin-top: 13px
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        align-content: space-between
+        
+        &__logo-form-shopcart
+            margin-top: 13px
+            width: 100%
+            display: flex
+            justify-content:  space-between
+            align-items: center
+        &__wrapper-logo
+            img
+                margin-right: 8px
+
+        &__name
+            width: 185px
+            height: 59px
+            display: inline-block
+                    
+            p 
+                width: 158px
+                height: 59px
+                font-family: $font-2 
+                font-size: 40px
+                line-height: 59px
+                color:$color-active
+                margin: 0 0
+
+            span
+                width: 151px
+                height: 14px
+                font-family: $font-1
+                font-weight: 300
+                font-size: 11px
+                line-height: 13px
+                color: $corol-mini-text
+
+        &__search-shopcart
+            // width: 465px
+            width: 33%
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap         
+            
+        &__horizontal-menu
+            order: 1
+            width: 100%
+            height: 94px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            padding: 0 2%
+            div
+                height: 50px
+                width: 140px
+                display: flex
+                text-align: center
+                flex-direction: row
+                align-items: center
+
+            img
+                margin-right: 12.5px
+            a
+                    font-family: $font-1
+                    text-decoration-line: none
+                    font-size: 14px
+                    line-height: 17px
+                    color: $color-text
+
+// shopcart
+.shopcart
+    width: 53px
+    height: 57px
+    background: linear-gradient($colorTop,$colorBottom)
+    border-radius: 2px
+    display: flex
+    align-items: center
+    align-content: center
+    position: relative
+                
+    img
+        margin: auto
+
+    &_number
+    font-family: $font-1
+    font-size: 13px
+    line-height: 16px
+    text-align: center
+    color: $corol-text2
+    span 
+        position: relative
+        left: -10px
+        top: -12px
+
+// pop-up your Goods wrapper
+.header__yourGoods_wrapper
+    display: none
+    position: absolute
+    left: 0
+    top: 68px
+    width: 426px
+    height: 388px
+    background: $corol-text2
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.3)
+    z-index: 99
+    transition: left .3s ease-in-out
+.header__yourGoods_title
+        width: 426px
+        height: 61px
+        background: #F7F7F7
+        display: flex
+        text-align: center
+        justify-content: start
+        position: relative
+        .title
+            width: 141px
+            height: 25px
+            left: 998px
+            top: 148px
+            margin: 0
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            text-align: center
+            color: $color-text
+            margin: 21px 151px 15px 134px
+        .cloze
+            color:#A8A8A8
+            font-size: 20px
+            left: -9px
+            top: 9px
+            cursor: pointer
+.header__yourGoods_product
+    width: 100%
+    height: 77px
+    border-bottom: 1px solid #D6D6D7
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-around
+    align-items: center
+    background: $corol-text2 
+    &-wrapp
+        width: 100%
+        height: 154px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center 
+        overflow-y: scroll  
+        padding-top: 140px
+    &-text
+        width: 30% 
+        height: 77px
+        padding: 20px 0
+        text-align: left 
+        font-family: $font-1
+        font-size: 15px
+        line-height: 18px
+        color: $color-text
+    &-number
+        width: 20%
+        height: 100%
+        display: flex
+        text-align: center
+        justify-content: space-around
+        align-items: center
+        .btn
+            width: 19px
+            height: 19px
+            background: $color-active
+            border-radius: 1px
+            cursor: pointer
+        p
+            height: auto
+            font-family: $font-1
+            font-size: 16px
+            line-height: 20px
+            color: $color-text
+    &-price
+        font-family: Montserrat
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: $color-number
+    &-cloze
+        cursor: pointer
+        color: $color-text
+        font-size: 20px
+.header__yourGoods_outcome
+    width: 90%
+    margin: 0 auto
+    height: 68px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    .outcome
+        width: 50%
+        height: 100%
+        font-family: $font-1
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        color: $color-text
+        text-align: -webkit-left
+        p
+            display: inline-block
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            margin-top: 18.720px
+            color: #FD8006
+            padding-left: 9px
+    .button
+        width: 50%
+        height: 100%
+        button
+            width: 182px
+            height: 48px
+            left: 1088px
+            top: 358px
+            background: linear-gradient(180deg, #FDB806 -61.02%, #FD8006 167.8%), #FD8006
+            border-radius: 1px
+            border: none
+            margin: 20px 0 0 10px
+            font-family: $font-1
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: $corol-text2
+.header__yourGoods_feature
+    width: 90%
+    margin: 0 auto
+    height: 52px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-section
+        width: auto
+        height: 100%
+
+        h6
+            line-height: 17px
+            color: $color-text
+            font-family: $font-1
+            font-size: 14px
+            margin: 3px 0
+        p
+            font-family: $font-1
+            font-size: 14px
+            font-weight: 500
+            color: #FD8006
+            line-height: 17px
+            display: inline-block
+        div
+            width: 18px
+            height: 18px
+            border-radius: 50%
+            border: 1px solid  #B3B3B3
+            color:  #B3B3B3
+            display: inline-block
+            cursor: pointer
+.header__yourGoods_delivery
+    width: 100%
+    height: 52px
+    background: #F7F7F7 
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+        font-family: $font-1
+        font-weight: 500
+        font-size: 15px
+        line-height: 18px
+        text-align: center
+        color: $color-text
+        margin: 0
+    &-icon
+        margin-right: 8px
+
+
+// header burger
+
+.header-mini
+    display: none
+    width: 100%
+    height: 55px
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    position: relative
+    &__logo
+        width: 70%
+        display: flex
+        justify-content: center
+        height: 55px
+    &__wrapper-logo 
+        height: 45px  
+        width: 126px 
+        display: flex
+        justify-content: center
+        text-align: center
+        img
+            margin: 9px 9px 0 0 
+    &__name
+        height: 37px
+        text-align: center
+        
+        p
+            margin: 0
+            height: 33px
+            font-size: 25px
+            line-height: 37px
+            margin-right: 0
+            font-family: Circe
+            color: $color-active
+        span
+            height: 9px
+            font-size: 7px
+            line-height: 9px
+            font-family: Montserrat
+            font-weight: 300
+            font-size: 7px
+            line-height: 9px
+            color: #858585
+    &__icon
+        margin-right: 19px
+        cursor: pointer
+    &__menu_wrapper
+        width: 100%
+        height: auto
+        background: #8a878721
+        position: absolute
+        top:54px
+        left: -110%
+        z-index: 9999
+        transition: left .3s ease-in-out
+    &__menu
+        
+        height: auto
+        width: 57.5% 
+        border: 1px solid $corol-text2
+        background: $corol-text2
+        
+        &_saction
+            width: 100%
+            border-bottom: 1px solid #D6D6D6
+            &-text
+                font-family: $font-1
+                font-size: 14px
+                line-height: 17px
+                color: $color-text
+                height: 18px
+                margin: 15px 0 15px 21px
+                padding: 0
+    &__search_wrapper
+        width: 100%
+        height: 55px
+        background: $corol-text2
+        position: absolute
+        left: 120%
+        top: 0
+        transition: left .3s ease-in-out
+        .form-search_mobile
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-bottom: none
+            input
+                margin-left: 27px
+        .arrow
+            left: 4px
+            border-top: 1px solid $color-text
+            border-bottom: none
+            cursor: pointer
+        :hover
+            color: $color-number
+
+
+// carusel
+.container1
+    order: 2
+    width: 100%
+    position: relative
+
+.carusel
+    order: 2
+    width: 100%
+    height: 430px
+    background-image: url(../img/home/carusel/carusel_bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    
+    &__img
+        width: 45%
+
+    &__text-form
+        
+        width: 55%
+        height: 100%
+        padding: 63px 38px 75px 33px
+        p 
+            margin: 5px 0
+            width: 100%
+            font-family: $font-1
+            font-weight: bold
+            font-size: 35px
+            line-height: 43px
+            color: $corol-text2
+    span
+        font-family: $font-1
+        font-size: 16px
+        line-height: 20px
+        color: $corol-text2
+        margin-bottom: 5px
+    &__form
+        margin: 10px 10px 10px 0
+        .carusel__input, button
+            width: 220px
+            height: 53px
+            border: 1px $corol-text2 solid
+            background: transparent
+            padding: 5px
+            margin-right: 10px
+            margin-top: 10px
+            font-family: $font-1
+            font-size: 16px
+            line-height: 20px
+            color: $corol-text2
+            outline: none
+        button
+            border: none
+            text-align: center
+            background: linear-gradient(#FDB806,#FD8006)
+            img
+               margin-top: 3px
+        ::placeholder 
+                color:  $corol-text2  
+.carusel__radio-input
+        position: absolute
+        bottom: 8%
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 999
+
+#form-search-wrapp 
+    width: 80%
+.navBar-slyder
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+    align-content: space-between
+    align-items: center
+
+.checkboxText
+    display: flex
+    width: 80%
+    margin: 11px 0
+    text-align: center
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    span
+        font-size: 13px
+        margin-left: 2px
+        line-height: 16px
+    
+// home
+.conteiner__home-main
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: column
+
+// mini search
+.form-search
+    width: 80%
+    height: 45px
+    padding-top: 15px
+    padding-bottom: 11px
+    border-bottom: 1px solid $color-form-1
+    order: 1
+    input
+        width: 80%
+        border: none
+        display: inline
+        outline: none
+        font-family: $font-1
+        font-size: 15px
+        line-height: 18px
+    button
+        width: 10%
+        border: none
+        background-color: transparent
+        display: inline
+        cursor: pointer
+        color: $color-form-2
+
+// pop-up
+
+.pop-up
+    width: 279px
+    height: 364px
+    background: $corol-text2
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.3)
+    padding: 18px
+    position: absolute
+    left:8.5%
+    top: 58px 
+    z-index: 9
+    transition: top 10s ease-in-out
+   
+    form
+        width: 100%
+    &__groupe-checkbox-text
+        height: 224px
+        width: 100%
+        overflow-y: scroll
+        padding: 10px 0
+    &__checkbox-text
+        width: 100%
+        height: 20px
+        margin: 6px 0
+        position: relative
+        display: flex
+        
+        .squared
+            label
+                background: $corol-text2
+                border: 1px solid $color-form-1
+    &__buttons
+        height: 114px
+        width: 100%
+        padding-top: 10px 
+        &_button1, &_button2
+            width: 100%
+            width: 114px
+            height: 40px
+            left: 285px
+            top: 1114px
+            background: linear-gradient(180deg, #FDB806 -61.02%, #FD8006 167.8%), #FD8006
+            border-radius: 1px
+            border: none
+            cursor: pointer
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: $corol-text2
+            margin-right: 5px
+        &_button2
+            border: 1px solid #FD8006
+            background: #FFFFFF
+            box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.3)
+            color: $color-number
+.context
+    margin: 0
+    padding-top: 3px
+    font-family: $font-1
+    font-size: 15px
+    line-height: 18px
+
+
+
+// main 
+.home-main
+    width: 100%
+    &__section1
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .add
+            position: relative
+            width: 200px
+            height: 53px
+            .section1-arrow
+                border-top: none
+                border-right: none
+                border-left: 1px solid $color-text
+                top: 22px
+                left: 174px             
+        .add:hover
+            background: $color-number
+            color: $corol-text2
+            border:1px solid #999999
+            border: none
+            .arrow
+                border: 1px solid #FFFFFF
+                border-top: none
+                border-right: none
+            .section1-arrow
+                border: 1px solid #FFFFFF
+                border-top: none
+                border-right: none
+          
+
+        &_title
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            position: relative
+            h1
+                width: auto
+                height: 37px
+                margin-right: 23px
+                font-family: $font-1
+                font-weight: 700
+                font-size: 30px
+                line-height: 37px
+                color: $color-text3
+            .chapter
+                font-family: $font-1
+                font-size: 14px
+                line-height: 17px
+                color: $color-text
+                margin: 0 9px 0 0
+            .subdivision
+                color: $color-number
+                margin: 0 4.8px
+            .cloze
+                color: #AEAEAE
+                cursor: pointer
+                margin-left: 4px
+            .cloze:hover
+                color: #F43434
+            .title-button
+                height: 35px
+                width: 175px
+                &:hover
+                    color: #ED2424
+                    border: 1px solid #ED2424
+            .cloze
+                    margin-right: 6px
+                
+                
+        &_filter
+            width: 100%
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            position: relative
+            .text
+                width: 100px
+                height: 18px
+                font-family: $font-1
+                font-size: 14px
+                line-height: 17px
+                color: $color-text3
+                border-right: solid 1px $color-border1
+                margin-right: 11px
+            &-buttons
+                width: 159px
+                height: 37px
+                cursor: pointer
+                border: none
+                font-family: $font-1
+                font-size: 14px
+                line-height: 17px
+                text-align: center
+                margin: 3px 14px 3px 0
+                background: transparent
+                color: $color-text
+                border:1px solid #999999
+
+        &_wrapper-product
+            max-width: 100%
+            height: auto
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: flex-start
+            align-items: center
+        &_product
+            min-width: 250px
+            height: 416px
+            background: $corol-text2
+            margin: 10px
+            display: flex
+            flex-direction: column
+            align-items: center
+            flex-wrap: nowrap
+            justify-content: space-evenly
+            align-content: center
+
+.product_mini-foto
+    width: 100%
+    height: 24px
+    display: flex
+    align-items: center
+    flex-direction: row
+    justify-content: space-around
+
+.product_big-foto
+    height: 184
+.product_sell
+    position: relative
+    text-align: center
+    padding: 5px 0
+    width: 58px
+    height: 30px
+    left: -74px
+    top: -15px
+    font-family: $font-1
+    font-style: normal
+    font-weight: 500
+    font-size: 15px
+    line-height: 18px
+    color: $color-button1
+    background: $corol-text2
+    border: 1px solid #E2E2E2
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+    border-radius: 1px
+.product_price
+    margin: 5px 0 0 0 
+    width: 100%
+    display: flex
+    flex-direction: row
+    text-align: center
+    align-items: center
+    justify-content: flex-start
+
+    &-newPrice
+        font-family: $font-1
+        margin-right: 10px 
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        color: $color-number
+    &-oldPrice
+        font-family: $font-1
+        font-size: 15px
+        line-height: 18px
+        text-decoration-line: line-through
+        color: $color-text
+    img
+        margin-right: 14.61px
+    &-salesman
+        height: 20px
+        display: block
+        margin: 0
+        font-family: $font-1
+        font-size: 16px
+        line-height: 20px
+        color:$color-text
+        justify-content: left
+    &-salesmanMini
+        margin: 0
+        font-family: $font-1
+        font-size: 13px
+        line-height: 16px
+        color: #7A7A7A
+.star
+    img
+        margin-right: 3px
+
+
+// section 3
+
+.home-main__section3
+    width:100%
+    height: 385px
+    margin: 50px 0 58px 0
+    border: 14px solid $corol-text2
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.19)
+    background: url(../img/home/bg-1.jpg) 120% 
+    background-repeat: no-repeat
+    background-size: contain
+    overflow: hidden  
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: center
+    &_context
+        width: 734px
+        font-family: $font-1
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        text-align: center
+        color: $color-text
+        margin: 0 0  2em 0
+        span
+            color: $color-number
+            font-weight: bold
+    &_form 
+        display: flex
+        flex-direction: column
+        align-items: center
+        span 
+            width: 306px
+            font-family: $font-1
+            font-size: 14px
+            line-height: 17px
+            color: $color-text3
+            display: block
+            text-align: left
+        input
+            width: 306px
+            height: 47px
+            padding: 15px
+            border: 1px solid $color-form-3
+            box-sizing: border-box
+            border-radius: 2px
+            font-family: $font-1
+            font-size: 15px
+            line-height: 18px
+            color: $color-form-2
+        .button
+            height: 71px
+            display: flex
+            align-items: center
+            flex-direction: row
+            justify-content: space-evenly
+            button
+                width: 306px
+                height: 53px
+                margin: 0 7px
+                background: linear-gradient(180deg, #FDB806 -61.02%, #FD8006 167.8%)
+                box-shadow: 0px 4px 13px rgba(255, 126, 0, 0.6)
+                border-radius: 2px
+                border: none
+                font-family: $font-1
+                font-weight: bold
+                font-size: 16px
+                line-height: 20px
+                text-align: center
+                color: #FFFFFF
+            :nth-child(2)
+                background: linear-gradient(180deg, #FFBB3B 0%, #FFA800 100%), linear-gradient(180deg, #FDB806 -61.02%, #FD8006 167.8%)
+                box-shadow: 0px 4px 13px rgba(255, 126, 0, 0.6)
+            :nth-child(3)
+                background: linear-gradient(180deg, #FDB806 0%, #FD8006 100%)
+
+// footer
+
+.footer
+    width: 100%
+    height: 331px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: url(../img/home/bg-footer.png)
+    background-repeat: repeat
+    background-size: contain
+    &__wrapper
+        width: 80%
+        margin: 0 auto
+    &__top
+        width: 100%
+        height: 242px
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        &_section
+            width: 33.3%
+            padding-top: 36px
+            display: flex
+            flex-direction: column
+            flex-wrap: nowrap
+            align-items: flex-start
+            align-content: flex-start
+        &_contact
+            width: 100%
+        &_logo
+            
+            display: flex
+
+            img
+                margin-right: 6px
+                margin-top: 15px
+            &-name
+                width: 158px
+                height: 61px
+                p 
+                    font-family: Circe
+                    font-size: 40px
+                    line-height: 59px
+                    color: #8BB655
+                    margin: 0
+                span
+                    width: 151px
+                    height: 14px
+                    font-family: $font-1
+                    font-weight: 300
+                    font-size: 11px
+                    line-height: 13px
+                    color: $corol-mini-text
+        &_nav
+            width: 303px
+            height: 18px
+            font-family: $font-1
+            font-size: 14px
+            line-height: 17px
+            text-decoration-line: underline
+            color: $color-text
+            padding-top: 45px
+            a
+                margin-right: 10px
+                color: $color-text        
+        &_icon-text
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+            align-items: flex-start
+            margin-bottom: 20px
+            img
+                margin-right: 1%
+                padding-top: 2px
+            div
+                width: 162px
+                text-align: center
+                margin-right: 2%
+                font-family: $font-1
+                font-weight: 500
+                font-size: 18px
+                line-height: 22px
+                color: $color-text
+            p
+                margin: 0
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 15px
+                line-height: 18px
+                color: #222222
+            a
+                font-family: Montserrat
+                font-style: normal
+                font-weight: 500
+                font-size: 15px
+                line-height: 18px
+                text-decoration-line: underline
+                color: $color-active
+                margin: 0 0 0 22px
+        &:nth-child(1)
+            order: 1
+        &:nth-child(2)
+            order: 2
+        &:nth-child(3)
+            order: 3
+            align-items: flex-end
+
+            
+
+        &_soc
+            width: 202.8px
+            display: flex
+            flex-direction: row
+            align-items: center
+            text-align: right
+            justify-content: space-between
+            &-block
+                margin-top: 0
+                width: 40.7px
+                height: 40.7px
+                background: $color-active
+                border-radius: 1px
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+            :hover
+                background: $color-hover
+            &-up
+                width: 98px
+                height: 41px
+                background: $color-active
+                border-radius: 1px  
+                margin-top: 35px
+                cursor: pointer
+                padding: 12px 34px 11px 19px
+                position: relative
+                span
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 17px
+                    color: $corol-text2
+                .arrow
+                    left: 76px
+                    top: 19px
+                    border: 1.2px solid $corol-text2
+                    border-bottom: none
+                    border-left: none
+            :hover
+                background: $color-hover
+        h6
+            width: 280px
+            height: 41px
+            font-family: $font-1
+            font-size: 15px
+            line-height: 18px
+            text-align: right
+            color: $color-text
+            margin: 0 0 14px 0      
+       
+.section-3
+    align-content: flex-end
+    align-items: flex-end
+
+.footer__buttom
+    width: 100%
+    padding-bottom: 12px
+    display: flex
+    align-items: center
+    align-content: flex-start
+    justify-content: space-between
+    p
+        height: 18px
+        font-family: $font-1
+        font-size: 14px
+        line-height: 17px
+        color: $color-text
+    &:nth-child(1)
+        order: 1
+    &:nth-child(2)
+        margin-right: 10%
+        order: 2
+    &:nth-child(3)
+        order: 3
+        display: flex
+
+
+#home-main-pop-up1,
+#header-img-cloze
+    display: none
+
+#home-main-pop-up2
+    display: none
+    height: 318px
+    left: 36%
+
+.text-decoration 
+    text-decoration-line: underline
+    margin-right: 20%
+
+.button-corol-tr
+    background: $color-button1
+    color: $corol-text2
+    border:1px solid #999999
+    border: none
+
+.position2
+    display: none
+    height: 18px
+    font-family: $font-1
+    font-size: 14px
+    line-height: 17px
+    color: $color-text3
+    margin-right: 11px
+    position: relative
+    .arrow
+        border-left: none
+        border-right: 1px solid $color-text
+        left: 70px
+        top: 6px
+.position1,
+#header-img-burger
+    display: block
+
+._active
+    left: 0
+._active1
+    left: -373px
+   
+
+
+
+// media 
+
+@media screen and (max-width: 1398px) 
+    .contact-nav
+        &__contact
+            width: 50%
+            span
+                font-style: 11px
+        &__nav 
+             font-size: 12px
+    .home-main__section3
+        height: 400px
+        &_context
+            font-size: 21px
+        &_form
+            .button
+                width: 100%
+                button
+                    width: 250px
+
+
+
+@media screen and (max-width: 1120px) 
+    .contact-nav
+        &__contact
+            width: 55%
+            span
+                font-style: 9px
+            :nth-child(3)
+                    margin:0 2% 0 1%
+        &__nav 
+             font-size: 12px
+    .header
+        &___search-shopcart
+            width: 40%
+        input
+                    width: 65%
+
+    .home-main__section3
+        height: 300px
+        &_context
+            font-size: 18px
+            width: 80%
+            margin: 0 0 1em 0
+        &_form
+            .button
+                width: 100%
+                button
+                    width: 209px
+    
+        // footer
+
+    .footer__top_logo
+           font-size: 12px
+    .footer__top_icon-text
+        div
+            font-size: 12px
+    .footer__top 
+        h6
+            font-size: 13px
+        &_nav
+            font-size: 12px
+    .footer__buttom
+        p
+            font-size: 12px
+
+
+@media screen and (max-width: 1026px) 
+    .carusel
+        flex-direction: column
+        &__img
+            
+            width: 100%
+            margin-bottom: 15%
+        &__text-form
+            width: 100%
+            height: 100%
+            padding: 10px
+            &__form
+            margin: 0
+    .carusel__radio-input
+        bottom: 1%
+
+    .header__horizontal-menu
+        order: 2
+        height: auto
+        flex-wrap: wrap
+        flex-direction: row
+    .container1
+        order: 1
+
+    .container,
+    .footer__wrapper
+        width: 90%
+    .contact-nav,
+    .title-button,
+    .chapter,
+    .header
+        display: none
+    .header-mini
+        display: flex
+
+    .home-main__section1_title
+        justify-content: space-between
+
+
+    .footer__top_section 
+        font-size: 13px
+           
+
+
+@media   ( max-width: 800px )
+
+    .home-main__section1_filter
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        flex-wrap: wrap
+        &-buttons
+            display: none    
+    .home-main__section1_wrapper-product
+        width: 100%
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        overflow-x: auto
+
+    .section-3
+        align-content: center
+        align-items: center
+
+    .home-main__section3
+        height: 250px
+        &_context
+            font-size: 14px
+            line-height: 20px
+            width: 80%
+            margin: 0 0 1em 0
+        &_form
+            .button
+                width: 100%
+                button
+                    width: 150px
+
+    .text-decoration
+        margin-right: 0
+            
+    .footer,
+    .footer__wrapper
+        height: auto
+
+    .footer__top
+        flex-direction: column
+        align-items: center
+        height: auto
+        &_section
+            width: 63%
+            padding-top: 20px
+            height: auto
+            align-items: center
+            align-content: space-between
+            align-content: flex-start
+            align-items: flex-start
+        &_section:nth-child(1)
+            order: 3
+        &_section:nth-child(2)
+            order: 2
+        &_section:nth-child(3)
+            order: -1
+            
+
+        &_logo,
+        &_soc-up
+            display: none
+        &_nav
+            padding: 0
+        &_icon-text
+            span
+                width: 100px
+        h6
+            font-size: 15px
+            line-height: 18px
+            text-align: center
+            width: 100%
+        &_icon-text
+            div
+                font-size: 18px
+                line-height: 22px
+        &_nav
+            font-size: 14px
+            width: 100%
+            display: flex
+            justify-content: space-between
+        &_contact
+                padding-left: 15%
+    
+    .wrapp-soc
+        width: 60%
+        width: 100%
+        display: flex
+        text-align: center
+        align-items: center
+        justify-content: center
+    
+
+    .footer__buttom
+        flex-direction: column
+        p
+            font-size: 12px
+        :nth-child(1)
+                order: 3
+        :nth-child(2)
+                order: 1
+        :nth-child(3)
+                order: 2
+    #buttom-text
+        font-size: 14px
+        line-height: 17px
+        color: #979797
+        padding-top: 16px
+  
+
+@media screen and (max-width: 569px) 
+    .carusel
+        flex-direction: column
+         
+        &__text-form
+       
+            &__form
+            margin: 0
+            p
+                font-size: 20px
+                line-height: 24px
+            span
+            font-size: 12px
+
+        .carusel__input, button
+            width: 100%
+    .footer
+        margin-top: 20px
+    .footer__top_section
+        width: 80%
+    .footer__top_icon-text
+        div
+            font-size: 16px
+    .position2
+        display: block
+    .position1,
+    .chapter
+         display: none
+                
+    #home-main-pop-up1
+      left: 3%
+      top: 43px
+    #home-main-pop-up2
+      left: 3%
+      top: 87px
+    .home-main__section3
+        display: none
+    
+    
+@media screen and (max-width: 350px) 
+    .container,
+    .footer__wrapper
+        width: 100%
+    #home-main-pop-up2
+      top: 130px
+    .footer__top_section
+        width: 100%
+    .footer__top_icon-text
+        div
+            font-size: 18px
+    
