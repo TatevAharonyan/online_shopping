@@ -164,7 +164,7 @@ const form = document.querySelector(".form-search");
 const formInput = document.querySelector("#header-input");
 const formButtonImg = document.querySelector("#header-button-img");
 const arrow = document.querySelector(".arrow");
-searchWrapp.appendChild(arrow);
+form.appendChild(arrow);
 let isOpenPopupSearch = false;
 
 form.classList.add("form-search_mobile")
@@ -173,6 +173,7 @@ arrow.addEventListener('click', clozePopupSearch);
 // open search pop-up
 function openPopupSearch() {
     searchWrapp.appendChild(form);
+    searchWrapp.style.width = "100%"
     isOpenPopupSearch = true;
     searchWrapp.classList.add("_active");
     formInput.placeholder = "Введите запрос";
@@ -183,6 +184,7 @@ function openPopupSearch() {
 // cloze search pop-up
 function clozePopupSearch() {
     isOpenPopupSearch = false;
+    searchWrapp.style.width = "0"
     searchWrapp.classList.remove("_active");
     formInput.placeholder = "Поиск";
     formButtonImg.src = "./img/home/cearch.png";
